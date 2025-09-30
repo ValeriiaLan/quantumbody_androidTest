@@ -9,3 +9,22 @@
 # System
 .DS_Store
 maestro.zip
+# builds & archives
+*.apk
+*.aab
+*.ipa
+*.zip
+*.tar
+*.gz
+
+# logs & tmp
+*.log
+logs/
+tmp/
+.DS_Store
+
+# Maestro artifacts
+*.mp4
+*.png
+*.json
+maestro/results/
