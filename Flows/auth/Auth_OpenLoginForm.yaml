@@ -1,0 +1,6 @@
+appId: ${appId}
+---
+# Від лендінгу авторизації → у форму логіну
+- assertVisible: "LOGIN"
+- tapOn: "LOGIN"
+- waitForAnimationToEnd

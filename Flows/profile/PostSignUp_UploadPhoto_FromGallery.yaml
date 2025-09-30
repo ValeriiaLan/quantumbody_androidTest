@@ -1,0 +1,25 @@
+appId: ${appId}
+---
+# PostSignUp_UploadPhoto_FromGallery.yaml
+# Кроки для позитивного сценарію — завантаження фото
+
+- assertVisible: "NEXT"
+
+# Тап на аватар, щоб відкрити галерею
+- tapOn:
+    point: "50%,37%"
+- waitForAnimationToEnd
+
+# Очікуємо відкриття системного пікера
+- assertVisible: "Photos"
+
+# Вибираємо перше фото (координата по центру першого слоту)
+- tapOn:
+    point: "12%,30%"
+- waitForAnimationToEnd
+
+# Підтверджуємо NEXT
+- assertVisible: "NEXT"
+- tapOn: "NEXT"
+- waitForAnimationToEnd
+- assertVisible: "Alignment Log\nWHAT’S NEW?"

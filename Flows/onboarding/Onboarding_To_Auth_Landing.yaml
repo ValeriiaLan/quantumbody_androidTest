@@ -1,0 +1,53 @@
+appId: ${appId}
+---
+# Строгий прохід з обов’язковими асертами
+
+# Екран 1
+- assertVisible: "QUANTUM
+
+    BODY
+
+    YOUR SPACE FOR
+
+    CONSCIOUS LIVING"
+- tapOn: "GET STARTED"
+- waitForAnimationToEnd
+
+# Екран 2
+- assertVisible: "WELCOME TO YOUR
+
+    PERSONAL SANCTUARY FOR ALIGNMENT AND\ 
+
+    CO-CREATION.\ 
+
+    Track synchronicities, dreams, manifestations,
+
+    intentions, and gratitude—practices that
+
+    ground you in the present, inspire your future,
+
+    and tune you into the signs along the way. "
+- tapOn: "GET STARTED"
+- waitForAnimationToEnd
+
+# Екран 3
+- assertVisible: "YOUR\nALIGNMENT LOG"
+- tapOn: "NEXT"
+- waitForAnimationToEnd
+
+# Екран 4
+- assertVisible: "SET\nMOMENTS TO TUNE IN"
+- tapOn: "NEXT"
+- waitForAnimationToEnd
+
+# Системний діалог нотифікацій (може з’явитись)
+- tapOn:
+    text: "Allow"
+    optional: true
+- tapOn:
+    text: "Don’t allow"
+    optional: true
+
+# Контроль: ми на лендінгу
+- assertVisible: "CONTINUE WITH EMAIL"
+- assertVisible: "LOGIN"

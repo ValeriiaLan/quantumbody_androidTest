@@ -1,0 +1,24 @@
+appId: ${appId}
+---
+# Повний ланцюг без рестартів між тестами
+
+# 1) Реєстрація → Home
+- runFlow: ../Tests/01_Auth/01_Auth_Registration_HappyPath.yaml
+# 1.1) Повертаємось на лендінг
+- runFlow: ../Flows/account/Account_Logout.yaml
+
+# 2) Логін (email) → Home
+- runFlow: ../Tests/01_Auth/03_Auth_Login_HappyPath.yaml
+# 2.1) Повертаємось на лендінг
+- runFlow: ../Flows/account/Account_Logout.yaml
+
+# 3) Логін (Google) → Home (опційно)
+- runFlow: ../Tests/01_Auth/04_Auth_Login_Google_HappyPath.yaml
+
+# 3.1) Повертаємось на лендінг (опційно)
+- runFlow: ../Flows/account/Account_Logout.yaml
+
+
+# 4) Forgot Password (із лендінгу)
+- runFlow: ../Tests/01_Auth/05_Auth_ForgotPassword_HappyPath.yaml
+

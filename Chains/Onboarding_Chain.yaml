@@ -1,0 +1,6 @@
+appId: ${appId}
+name: Onboarding Chain
+---
+- runFlow: ../Tests/02_Onboarding/00_Onboarding_HappyPath.yaml
+- runFlow: ../Tests/02_Onboarding/01_Onboarding_Skip.yaml
+- runFlow: ../Tests/02_Onboarding/02_Onboarding_Notifications_Denied.yaml

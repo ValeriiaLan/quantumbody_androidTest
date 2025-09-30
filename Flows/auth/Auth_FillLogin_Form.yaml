@@ -1,0 +1,18 @@
+appId: ${appId}
+---
+# Форма логіну (email + пароль)
+
+- assertVisible: "EMAIL"
+- assertVisible: "PASSWORD"
+
+- tapOn: "EMAIL"
+- inputText: ${EMAIL}
+
+- tapOn: "PASSWORD"
+- inputText: ${PASSWORD}
+- hideKeyboard
+- waitForAnimationToEnd
+
+- assertVisible: "CONTINUE WITH EMAIL"
+- tapOn: "CONTINUE WITH EMAIL"
+- waitForAnimationToEnd

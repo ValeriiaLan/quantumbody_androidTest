@@ -1,0 +1,55 @@
+appId: ${appId}
+---
+
+# Екран 1
+- assertVisible: "QUANTUM
+
+    BODY
+
+    YOUR SPACE FOR
+
+    CONSCIOUS LIVING"
+- tapOn: "GET STARTED"
+- waitForAnimationToEnd
+
+# Екран 2
+- assertVisible: "WELCOME TO YOUR
+
+    PERSONAL SANCTUARY FOR ALIGNMENT AND\ 
+
+    CO-CREATION.\ 
+
+    Track synchronicities, dreams, manifestations,
+
+    intentions, and gratitude—practices that
+
+    ground you in the present, inspire your future,
+
+    and tune you into the signs along the way. "
+
+- tapOn: "GET STARTED"
+- waitForAnimationToEnd
+
+# Екран 3
+- assertVisible: "YOUR\nALIGNMENT LOG"
+- tapOn: "NEXT"
+- waitForAnimationToEnd
+
+# Екран 4
+# Системний діалог нотифікацій (може не з’явитись)
+- tapOn:
+      text: "Allow"
+      optional: true
+- assertVisible: "SET\nMOMENTS TO TUNE IN"
+- tapOn:
+      point: "77%,34%"
+- tapOn: "7:00 AM"
+- tapOn: "9:00 AM"
+- assertVisible: "9:00 AM"
+- tapOn: "EVERY DAY"
+- tapOn: "ON WEEKENDS"
+- assertVisible: "ON WEEKENDS"
+- tapOn: "NEXT"
+- waitForAnimationToEnd
+
+

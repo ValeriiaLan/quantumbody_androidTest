@@ -1,0 +1,11 @@
+# Env files
+.env.*
+!.env.template
+
+# IDE
+.idea/
+*.iml
+
+# System
+.DS_Store
+maestro.zip

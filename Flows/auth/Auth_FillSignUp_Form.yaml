@@ -1,0 +1,26 @@
+appId: ${appId}
+---
+# Auth_FillSignUp_Form.yaml
+
+- tapOn: "FIRST NAME*"
+- inputText: ${FIRSTNAME}
+
+- tapOn: "LAST NAME*"
+- inputText: ${LASTNAME}
+
+- tapOn: "EMAIL*"
+- inputText: ${NEW_EMAIL}
+
+- tapOn: "PASSWORD"
+- inputText: ${PASSWORD}
+- hideKeyboard
+- waitForAnimationToEnd
+
+# Погоджуємось з умовами (тап по тексту стабільно активує чекбокс)
+- tapOn:
+      point: "6%,47%"
+
+# Сабміт
+- assertVisible: "CONTINUE"
+- tapOn: "CONTINUE"
+- waitForAnimationToEnd

@@ -1,0 +1,23 @@
+appId: ${appId}
+---
+# Логін існуючого користувача → Home (ідемпотентний)
+
+# Якщо випадково потрапили в онбординг — тихо дійдемо до лендінгу
+- runFlow:
+    file: ../../Flows/onboarding/Onboarding_To_Auth_Landing.yaml
+    optional: true
+
+# Відкрити форму логіну (або пропустити, якщо вже на ній)
+- assertVisible:
+    text: "LOGIN"
+    optional: true
+- tapOn:
+    text: "LOGIN"
+    optional: true
+- waitForAnimationToEnd
+
+# Заповнити форму логіну
+- runFlow: ../../Flows/auth/Auth_FillLogin_Form.yaml
+
+# Саніті на домашній
+- assertVisible: "Alignment Log\nWHAT’S NEW?"

@@ -1,0 +1,48 @@
+appId: ${appId}
+---
+
+- clearState
+- launchApp
+# 01_Onboarding_Skip.yaml
+
+# Екран 1 — перший онбординг
+- assertVisible: "QUANTUM
+
+    BODY
+
+    YOUR SPACE FOR
+
+    CONSCIOUS LIVING"
+- tapOn: "GET STARTED"
+- waitForAnimationToEnd
+
+# Екран 2 — одразу скіпаємо онбординг
+- assertVisible: "WELCOME TO YOUR
+
+    PERSONAL SANCTUARY FOR ALIGNMENT AND\ 
+
+    CO-CREATION.\ 
+
+    Track synchronicities, dreams, manifestations,
+
+    intentions, and gratitude—practices that
+
+    ground you in the present, inspire your future,
+
+    and tune you into the signs along the way. "
+
+
+- assertVisible: "SKIP"
+- tapOn: "SKIP"
+- waitForAnimationToEnd
+
+# Системний діалог нотифікацій (може не з’явитись або з’явитись пізніше на деяких iOS)
+- tapOn:
+    text: "Don't Allow"
+    optional: true
+- tapOn:
+    text: "Allow"
+    optional: true
+
+# Саніті: повинні опинитись на екрані логіну/продовження
+- assertVisible: "CONTINUE WITH EMAIL"

@@ -1,0 +1,34 @@
+appId: ${appId}
+---
+# Login via Google → Home (ідемпотентний)
+
+# Якщо випадково потрапили в онбординг — тихо дійдемо до лендінгу
+- runFlow:
+        file: ../../Flows/onboarding/Onboarding_To_Auth_Landing.yaml
+        optional: true
+
+# Тицяємо на Google-іконку (під email)
+- tapOn:
+        point: "50%,69%"
+- waitForAnimationToEnd
+
+# Chooser: вибираємо профіль (якщо показався)
+- assertVisible:
+        text: "Choose an account"
+        optional: true
+- tapOn:
+        text: ${GOOGLE_ACCOUNT_EMAIL}
+        optional: true
+- waitForAnimationToEnd
+
+# (Опційні корпоративні/MDM діалоги)
+- assertVisible:
+        text: "To access your work account"
+        optional: true
+- tapOn:
+        text: "SKIP"
+        optional: true
+- waitForAnimationToEnd
+
+# Саніті на домашній
+- assertVisible: "Alignment Log\nWHAT’S NEW?"

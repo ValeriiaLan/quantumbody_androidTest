@@ -1,0 +1,13 @@
+appId: ${appId}
+---
+# 00_Auth_Landing_Sanity.yaml
+
+- clearState
+- launchApp
+
+# Проходимо онбординг до лендінгу
+- runFlow: ../../Flows/onboarding/Onboarding_To_Auth_Landing.yaml
+
+# Перевіряємо екран лендінгу авторизації
+- assertVisible: "CONTINUE WITH EMAIL"
+

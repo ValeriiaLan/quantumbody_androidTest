@@ -1,0 +1,11 @@
+appId: ${appId}
+name: Onboarding - Happy Path
+---
+
+- clearState
+- launchApp
+
+- runFlow: ../../Flows/onboarding/Onboarding_Flow.yaml
+
+# Саніті
+- assertVisible: "CONTINUE WITH EMAIL"

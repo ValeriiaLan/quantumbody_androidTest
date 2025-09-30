@@ -1,0 +1,22 @@
+appId: ${appId}
+---
+# Auth_OpenEmailForm.yaml
+
+
+# Відкрити форму реєстрації по email
+- assertVisible: "CONTINUE WITH EMAIL"
+- tapOn: "CONTINUE WITH EMAIL"
+- waitForAnimationToEnd
+
+# Перевірки форми "Sign Up"
+
+- assertVisible: "FIRST NAME*"
+- assertVisible: "LAST NAME*"
+- assertVisible: "EMAIL*"
+- assertVisible: "PASSWORD"
+- assertVisible: "By continuing, you agree to Quantum Body"
+- assertVisible: " Terms & Conditions "
+- assertVisible: "Privacy Policy"
+- assertVisible: "CONTINUE"
+- assertVisible: "HAVE AN ACCOUNT? "
+- assertVisible: "LOGIN"
