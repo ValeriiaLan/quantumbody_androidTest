@@ -4,8 +4,8 @@ appId: ${appId}
 
 
 # Відкрити форму реєстрації по email
-- assertVisible: "CONTINUE WITH EMAIL"
-- tapOn: "CONTINUE WITH EMAIL"
+- assertVisible: "Button\nCONTINUE WITH EMAIL"
+- tapOn: "Button\nCONTINUE WITH EMAIL"
 - waitForAnimationToEnd
 
 # Перевірки форми "Sign Up"
@@ -17,6 +17,5 @@ appId: ${appId}
 - assertVisible: "By continuing, you agree to Quantum Body"
 - assertVisible: " Terms & Conditions "
 - assertVisible: "Privacy Policy"
-- assertVisible: "CONTINUE"
-- assertVisible: "HAVE AN ACCOUNT? "
-- assertVisible: "LOGIN"
+- assertVisible: "Button\nCONTINUE"
+

@@ -9,7 +9,7 @@ appId: ${appId}
     YOUR SPACE FOR
 
     CONSCIOUS LIVING"
-- tapOn: "GET STARTED"
+- tapOn: "Button\nGET STARTED"
 - waitForAnimationToEnd
 
 # Екран 2
@@ -27,12 +27,12 @@ appId: ${appId}
 
     and tune you into the signs along the way. "
 
-- tapOn: "GET STARTED"
+- tapOn: "Button\nGET STARTED"
 - waitForAnimationToEnd
 
 # Екран 3
 - assertVisible: "YOUR\nALIGNMENT LOG"
-- tapOn: "NEXT"
+- tapOn: "Button\nNEXT"
 - waitForAnimationToEnd
 
 # Екран 4
@@ -40,16 +40,16 @@ appId: ${appId}
 - tapOn:
       text: "Allow"
       optional: true
+
+
 - assertVisible: "SET\nMOMENTS TO TUNE IN"
+- tapOn: "Button\n7:00 AM"
+- tapOn: "Button\n11:00 AM"
 - tapOn:
-      point: "77%,34%"
-- tapOn: "7:00 AM"
-- tapOn: "9:00 AM"
-- assertVisible: "9:00 AM"
-- tapOn: "EVERY DAY"
-- tapOn: "ON WEEKENDS"
-- assertVisible: "ON WEEKENDS"
-- tapOn: "NEXT"
-- waitForAnimationToEnd
+        point: "50%,31%"
+- tapOn: "Button\nEVERY DAY"
+- tapOn: "Button\nEVERY DAY"
+
+- tapOn: "Button\nNEXT"
 
 

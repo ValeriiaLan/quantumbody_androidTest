@@ -12,9 +12,12 @@ appId: ${appId}
 - inputText: "1"
 - tapOn: "vdrssslera1234@gmail.com"
 - tapOn: "SAVE"
+- waitForAnimationToEnd
 - assertVisible: "@valeriialanchynska1"
+- waitForAnimationToEnd
+- waitForAnimationToEnd
+- waitForAnimationToEnd
 - tapOn:
-    point: "19%,29%"
-- tapOn:
-    point: "17%,67%"
-- tapOn: "SAVE"
+    point: "9%,8%"
+- waitForAnimationToEnd
+- assertVisible: "MY ACCOUNT"

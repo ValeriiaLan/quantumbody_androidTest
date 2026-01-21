@@ -1,38 +1,38 @@
 appId: ${appId}
 ---
 
-#- assertVisible: "ACTIVE MANIFESTATIONS"
-#- assertVisible: "LOG MANIFESTATION"
-#
-#- scrollUntilVisible:
-#    element:
-#      text: "IN PROGRESS"
-#
-#- assertVisible: "IN PROGRESS"
-#
-#
-#- tapOn: "Draft\n6 NEW HOME BY THE SEA\nOPEN"
-#
-#- tapOn: ADD THE DETAILS
-#- inputText: "6 I earn stable income from work that I genuinely enjoy. My schedule is flexible, I can work from anywhere, and I always have enough resources for travel, learning and supporting my family. Money flows to me through multiple aligned projects and collaborations."
-#
-#- scrollUntilVisible:
-#    element:
-#      text: "NOTE THE FEELINGS"
-#
-#
-#
-#- tapOn: "NOTE THE FEELINGS"
-#- inputText: "6 I feel calm, safe, inspired and confident that life is supporting me. There is a soft sense of trust and excitement about the future."
-#
-#- tapOn: "UPLOAD AN IMAGE"
-#- tapOn:
-#    point: "17%,64%"
-#- tapOn: "Done"
-#- tapOn: "SAVE"
-#
-#- waitForAnimationToEnd
-#- waitForAnimationToEnd
+- assertVisible: "ACTIVE MANIFESTATIONS"
+- assertVisible: "LOG MANIFESTATION"
+
+- scrollUntilVisible:
+    element:
+      text: "IN PROGRESS"
+
+- assertVisible: "IN PROGRESS"
+
+
+- tapOn: "Draft\n6 NEW HOME BY THE SEA\nOPEN"
+
+- tapOn: ADD THE DETAILS
+- inputText: "6 I earn stable income from work that I genuinely enjoy. My schedule is flexible, I can work from anywhere, and I always have enough resources for travel, learning and supporting my family. Money flows to me through multiple aligned projects and collaborations."
+
+- scrollUntilVisible:
+    element:
+      text: "NOTE THE FEELINGS"
+
+
+
+- tapOn: "NOTE THE FEELINGS"
+- inputText: "6 I feel calm, safe, inspired and confident that life is supporting me. There is a soft sense of trust and excitement about the future."
+
+- tapOn: "UPLOAD AN IMAGE"
+- tapOn:
+    point: "17%,64%"
+- tapOn: "Done"
+- tapOn: "SAVE"
+
+- waitForAnimationToEnd
+- waitForAnimationToEnd
 
 - scrollUntilVisible:
     element:

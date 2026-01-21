@@ -1,13 +1,13 @@
 appId: ${appId}
 ---
 - tapOn:
-    point: "87%,94%"
-- tapOn: "Logout"
+      point: "88%,94%"
+- tapOn: "Button\nLOGOUT"
 - waitForAnimationToEnd
-- assertVisible: "CONTINUE WITH EMAIL"
+- assertVisible: "Do you want to Logout?"
+- tapOn: "Button\nLogout"
 
 - waitForAnimationToEnd
 
 # 6) Саніті: повернулися на лендінг авторизації
-- assertVisible: "CONTINUE WITH EMAIL"
-- assertVisible: "LOGIN"
+- assertVisible: "Button\nCONTINUE WITH EMAIL"

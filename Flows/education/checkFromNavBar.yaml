@@ -1,0 +1,30 @@
+appId: ${appId}
+---
+
+- tapOn:
+    point: "31%,94%"
+
+- scrollUntilVisible:
+    element:
+      text: "GRATITUDE
+
+    The Frequency of Receivership"
+
+- tapOn: "GRATITUDE
+
+    The Frequency of Receivership"
+
+- scrollUntilVisible:
+    element:
+      text: "READ MORE"
+
+
+
+
+
+- tapOn:
+    point: "9%,8%"
+- tapOn: "MANIFESTATION\nLiving Your Future Now"
+- tapOn:
+    point: "9%,8%"
+

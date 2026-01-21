@@ -1,0 +1,29 @@
+appId: ${appId}
+---
+
+- tapOn:
+    point: "50%,94%"
+- assertVisible: "CHOOSE YOUR\nFIELD OF FOCUS"
+- tapOn: "LOG MANIFESTATION"
+- assertVisible: "MANIFESTATION"
+- tapOn: "TITLE YOUR MANIFESTATION"
+- inputText: "New home by the sea"
+
+
+- tapOn: ADD THE DETAILS
+- inputText: "I earn stable income from work that I genuinely enjoy. My schedule is flexible, I can work from anywhere, and I always have enough resources for travel, learning and supporting my family. Money flows to me through multiple aligned projects and collaborations."
+
+- tapOn: "NOTE THE FEELINGS"
+- inputText: "I feel calm, safe, inspired and confident that life is supporting me. There is a soft sense of trust and excitement about the future."
+
+- hideKeyboard
+
+
+
+- tapOn: "UPLOAD AN IMAGE"
+- tapOn:
+    point: "17%,64%"
+- tapOn: "Done"
+- tapOn: "SAVE"
+- waitForAnimationToEnd
+- assertVisible: "CHOOSE YOUR\nFIELD OF FOCUS"

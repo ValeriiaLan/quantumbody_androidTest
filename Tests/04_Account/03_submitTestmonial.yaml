@@ -6,7 +6,7 @@ appId: ${appId}
 - tapOn: "TELL US WHAT YOU MANIFESTED OR HOW THE APP SUPPORTED YOUR JOURNEY.*"
 
 - inputText: "test"
-
+- hideKeyboard
 - tapOn:
     point: "8%,65%"
 - tapOn:

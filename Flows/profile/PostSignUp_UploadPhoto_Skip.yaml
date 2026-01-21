@@ -1,0 +1,15 @@
+appId: ${appId}
+---
+
+- tapOn: "Button\nNEXT"
+- assertVisible: "UNLOCK YOUR FULL
+
+    EXPERIENCE
+
+    7-day free trial (cancel anytime)
+
+    Log Manifestations, Synchronicities, Intentions, Dreams, & Gratitude
+
+    Daily Quantum Reminders to stay inspired & aligned
+
+    Educational Tips to Deepen Your Experience"

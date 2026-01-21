@@ -1,0 +1,14 @@
+appId: ${appId}
+---
+
+- runFlow: ../Tests/04_Account/00_editPersonal_info.yaml
+
+- runFlow: ../Tests/04_Account/01_subscr_management.yaml
+
+- runFlow: ../Tests/04_Account/02_notifications.yaml
+- runFlow: ../Tests/04_Account/03_submitTestmonial.yaml
+
+
+
+- runFlow: ../Tests/04_Account/04_export_entries.yaml
+

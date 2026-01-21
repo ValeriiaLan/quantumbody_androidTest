@@ -1,6 +1,7 @@
 appId: ${appId}
 ---
-# Строгий прохід з обов’язковими асертами
+
+
 
 # Екран 1
 - assertVisible: "QUANTUM
