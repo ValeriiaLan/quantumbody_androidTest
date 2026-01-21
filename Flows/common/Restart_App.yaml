@@ -1,15 +1,12 @@
 appId: ${appId}
 ---
-# Restart_App: чистий стейт + явний старт через ADB
-
 - clearState
 - waitForAnimationToEnd
 
 - runScript:
-    content: |
-      adb shell input keyevent 3 || true
-      sleep 0.5
-      adb shell monkey -p ${appId} -c android.intent.category.LAUNCHER 1 >/dev/null 2>&1 || exit 1
-      sleep 1
+      script: |
+          const { execSync } = require('child_process');
+          execSync("adb shell input keyevent 3"); 
+          execSync("adb shell monkey -p ${appId} -c android.intent.category.LAUNCHER 1");
 
 - waitForAnimationToEnd

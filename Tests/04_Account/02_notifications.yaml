@@ -1,0 +1,8 @@
+appId: ${appId}
+---
+- tapOn: "NOTIFICATIONS"
+- assertVisible: "SET\nMOMENTS TO TUNE IN"
+- tapOn:
+    point: "80%,39%"
+- tapOn: "SAVE"
+- assertVisible: "MY ACCOUNT"

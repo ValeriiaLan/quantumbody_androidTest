@@ -1,5 +1,10 @@
 appId: ${appId}
 ---
+# 0) Відкриваємо апку
+- launchApp
+- waitForAnimationToEnd
+- waitForAnimationToEnd
+
 # Auth_Landing_Screen.yaml
 
 # Саніті перевірки лендінгу авторизації

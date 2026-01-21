@@ -3,7 +3,8 @@ appId: ${appId}
 # 01_Auth_Registration_HappyPath.yaml
 
 # 1) Онбординг → лендінг
-- runFlow: ../../Flows/onboarding/Onboarding_To_Auth_Landing.yaml
+
+- runFlow: ../../Flows/onboarding/Onboarding_Flow.yaml
 
 # 2) Відкрити форму Sign Up
 - runFlow: ../../Flows/auth/Auth_OpenEmailForm.yaml
@@ -12,4 +13,4 @@ appId: ${appId}
 - runFlow: ../../Flows/auth/Auth_FillSignUp_Form.yaml
 
 # 4) Upload photo (Happy Path)
-- runFlow: ../../Flows/profile/PostSignUp_UploadPhoto_FromGallery.yaml
+- runFlow: ../../Flows/profile/PostSignUp_UploadPhoto_Skip.yaml

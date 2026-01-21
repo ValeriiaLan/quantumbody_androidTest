@@ -1,0 +1,17 @@
+appId: ${appId}
+---
+
+
+- tapOn:
+    point: "13%,94%"
+- scrollUntilVisible:
+    element:
+      text: "EXPLORE EDUCATION PORTAL"
+
+- tapOn: "EXPLORE EDUCATION PORTAL"
+- assertVisible: "EDUCATION PORTAL"
+
+- scrollUntilVisible:
+    element:
+      text: "QUANTUM BASICS: THE FOUNDATION"
+

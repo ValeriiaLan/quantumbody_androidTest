@@ -10,9 +10,11 @@ appId: ${appId}
 
 - tapOn: "PASSWORD"
 - inputText: ${PASSWORD}
-- hideKeyboard
+
 - waitForAnimationToEnd
 
-- assertVisible: "CONTINUE WITH EMAIL"
-- tapOn: "CONTINUE WITH EMAIL"
+- assertVisible: "Button\nCONTINUE WITH EMAIL"
+- tapOn: "Button\nCONTINUE WITH EMAIL"
 - waitForAnimationToEnd
+- assertVisible: "Button\nSTART 7-DAY TRIAL FOR $0"
+- tapOn: "Button"

@@ -1,0 +1,43 @@
+appId: ${appId}
+---
+
+- tapOn:
+    point: "88%,94%"
+- tapOn: "EDIT PERSONAL INFO"
+
+- swipe:
+    start: "50%,80%"
+    end: "50%,20%"
+
+
+
+- tapOn:
+    point: "50%,81%"
+- assertVisible: "Delete Account?"
+- tapOn: "Delete"
+- assertVisible: "Please sign in again?"
+- tapOn: "Sign in again"
+- assertVisible: "CONTINUE WITH EMAIL"
+- tapOn: "LOGIN"
+
+- runFlow:
+    file: ../auth/Auth_FillLogin_Form.yaml
+
+
+- tapOn:
+    point: "88%,94%"
+- tapOn: "EDIT PERSONAL INFO"
+
+- swipe:
+    start: "50%,80%"
+    end: "50%,20%"
+
+
+- tapOn:
+    point: "50%,81%"
+- assertVisible: "Delete Account?"
+- tapOn: "Delete"
+- assertVisible: "CONTINUE WITH EMAIL"
+
+
+

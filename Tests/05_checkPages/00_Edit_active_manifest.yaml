@@ -1,0 +1,20 @@
+appId: ${appId}
+---
+- tapOn:
+    point: "13%,94%"
+- tapOn: "Active
+
+    NEW HOME BY THE SEA
+
+    I earn stable income from work that I genuinely enjoy. My schedule is flexible, I can work from anywhere, and I always have enough resources for travel, learning and supporting my family. Money flows to me through multiple aligned projects and collaborations.
+
+    OPEN"
+
+- assertVisible: "NEW HOME BY THE SEA"
+- tapOn: "Show menu"
+- tapOn: "Edit"
+- tapOn: "NEW HOME BY THE SEA"
+- inputText: "55"
+- tapOn: "SAVE"
+- tapOn: "Save and Close"
+- assertVisible: "NEW HOME BY THE SEA55"

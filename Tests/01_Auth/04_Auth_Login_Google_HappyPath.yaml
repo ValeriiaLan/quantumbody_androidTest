@@ -2,14 +2,10 @@ appId: ${appId}
 ---
 # Login via Google → Home (ідемпотентний)
 
-# Якщо випадково потрапили в онбординг — тихо дійдемо до лендінгу
-- runFlow:
-        file: ../../Flows/onboarding/Onboarding_To_Auth_Landing.yaml
-        optional: true
+
 
 # Тицяємо на Google-іконку (під email)
-- tapOn:
-        point: "50%,69%"
+- tapOn: "google"
 - waitForAnimationToEnd
 
 # Chooser: вибираємо профіль (якщо показався)
@@ -30,5 +26,7 @@ appId: ${appId}
         optional: true
 - waitForAnimationToEnd
 
-# Саніті на домашній
-- assertVisible: "Alignment Log\nWHAT’S NEW?"
+- assertVisible: "Button\nSTART 7-DAY TRIAL FOR $0"
+- tapOn: "Button"
+
+- assertVisible: "Button\nUPGRADE MY PLAN"

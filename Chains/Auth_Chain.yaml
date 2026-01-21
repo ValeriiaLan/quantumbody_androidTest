@@ -22,3 +22,6 @@ appId: ${appId}
 # 4) Forgot Password (із лендінгу)
 - runFlow: ../Tests/01_Auth/05_Auth_ForgotPassword_HappyPath.yaml
 
+# ChangePassword
+
+- runFlow: ../Tests/01_Auth/06_Auth_ChangePassword_HappyPath.yaml

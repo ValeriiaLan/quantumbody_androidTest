@@ -1,0 +1,24 @@
+appId: ${appId}
+---
+
+
+- tapOn: "SUBSCRIPTION MANAGEMENT"
+- assertVisible: "MANAGE PLAN\nManage your plans in one convenient place"
+- assertVisible: "CANCEL SUBSCRIPTION"
+- assertVisible: "RESTORE PURCHASES"
+- assertVisible: "TERMS & CONDITIONS"
+- assertVisible: "PRIVACY POLICY"
+- tapOn: "TERMS & CONDITIONS"
+- assertVisible: "Terms of Service"
+- tapOn:
+      point: "9%,8%"
+
+- waitForAnimationToEnd
+- waitForAnimationToEnd
+- waitForAnimationToEnd
+
+
+- tapOn:
+      point: "9%,8%"
+
+- assertVisible: "MY ACCOUNT"

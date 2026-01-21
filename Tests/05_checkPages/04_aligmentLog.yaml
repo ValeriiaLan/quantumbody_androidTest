@@ -1,0 +1,19 @@
+appId: ${appId}
+---
+- assertVisible: "SEARCH"
+- assertVisible: "6 NEW HOME BY THE SEA\nActive\n6 I earn stable income from work\
+    \ that I genuinely enjoy. My schedule is flexible, I can work from anywhere, and\
+    \ I always have enough resources for travel, learning and supporting my family.\
+    \ Money flows to me through multiple aligned projects and collaborations.\nOPEN\n\
+    17 November 2025"
+- assertVisible: "NEW HOME BY THE SEA55\nActive\nI earn stable income from work that\
+    \ I genuinely enjoy. My schedule is flexible, I can work from anywhere, and I\
+    \ always have enough resources for travel, learning and supporting my family.\
+    \ Money flows to me through multiple aligned projects and collaborations\nOPEN\n\
+    17 November 2025"
+- tapOn:
+    point: "90%,24%"
+- assertVisible: "FILTERS & SORT"
+- tapOn: "DRAFTS"
+- tapOn: "DONE"
+

@@ -1,0 +1,13 @@
+appId: ${appId}
+---
+
+- tapOn:
+    point: "50%,94%"
+
+- longPressOn:
+    point: "50%,35%"
+
+- tapOn: "SEARCH"
+- inputText: "1"
+- longPressOn:
+    point: "50%,35%"

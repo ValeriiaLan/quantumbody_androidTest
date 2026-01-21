@@ -1,0 +1,45 @@
+appId: ${appId}
+---
+- tapOn: "EXPORT ENTRIES"
+- assertVisible: "An email with a download link for your logs will be sent to: vdrssslera1234@gmail.com\n\
+    The link will remain active for 24 hours!"
+- tapOn: "Send"
+
+- pressKey: HOME
+- tapOn: "Gmail"
+- assertVisible:
+    text: "Your Quantum Body entries export"
+    index: 0
+
+- tapOn:
+    point: "50%,26%"
+- assertVisible: "Download CSV"
+
+- tapOn: "Delete"
+
+- pressKey: HOME
+- tapOn: "Quantum Body"
+
+
+- tapOn: "EXPORT ENTRIES"
+- tapOn: "Change email"
+- assertVisible: "Change email"
+- tapOn: "Email"
+- inputText: ${EMAIL_TWO}
+
+- tapOn: "Send"
+- pressKey: HOME
+- tapOn: "Gmail"
+- assertVisible:
+    text: "Your Quantum Body entries export"
+    index: 0
+
+- tapOn:
+    point: "50%,26%"
+
+- assertVisible: "Download CSV"
+- tapOn: "Delete"
+
+- pressKey: HOME
+- tapOn: "Quantum Body"
+- assertVisible: "MY ACCOUNT"

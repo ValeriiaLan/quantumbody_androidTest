@@ -1,0 +1,6 @@
+appId: com.quantumbody.io.quantumbody
+---
+- clearState
+- launchApp: com.quantumbody.io.quantumbody
+- waitForAnimationToEnd
+- waitForAnimationToEnd

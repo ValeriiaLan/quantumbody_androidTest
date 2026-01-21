@@ -3,11 +3,10 @@ appId: ${appId}
 # PostSignUp_UploadPhoto_FromGallery.yaml
 # Кроки для позитивного сценарію — завантаження фото
 
-- assertVisible: "NEXT"
+- assertVisible: "Button\nNEXT"
 
 # Тап на аватар, щоб відкрити галерею
-- tapOn:
-    point: "50%,37%"
+- tapOn: "Button"
 - waitForAnimationToEnd
 
 # Очікуємо відкриття системного пікера
@@ -15,11 +14,20 @@ appId: ${appId}
 
 # Вибираємо перше фото (координата по центру першого слоту)
 - tapOn:
-    point: "12%,30%"
+      point: "17%,64%"
 - waitForAnimationToEnd
 
 # Підтверджуємо NEXT
-- assertVisible: "NEXT"
-- tapOn: "NEXT"
+- tapOn: "Button\nNEXT"
 - waitForAnimationToEnd
-- assertVisible: "Alignment Log\nWHAT’S NEW?"
+- assertVisible: "UNLOCK YOUR FULL
+
+    EXPERIENCE
+
+    7-day free trial (cancel anytime)
+
+    Log Manifestations, Synchronicities, Intentions, Dreams, & Gratitude
+
+    Daily Quantum Reminders to stay inspired & aligned
+
+    Educational Tips to Deepen Your Experience"

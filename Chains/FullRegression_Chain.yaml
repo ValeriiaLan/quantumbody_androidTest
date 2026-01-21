@@ -1,0 +1,22 @@
+appId: ${appId}
+---
+
+# Auth Flow Chain
+- runFlow:
+    file: Auth_Chain.yaml
+
+# Create Logs Chain
+- runFlow:
+    file: CreateLogs_Chain.yaml
+
+# Account Chain
+- runFlow:
+    file: account_chain.yaml
+
+
+#  Check Pages Chain
+- runFlow:
+    file: checkPages_Chain.yaml
+
+
+

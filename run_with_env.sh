@@ -66,16 +66,20 @@ if [[ "${1:-}" == "maestro" && "${2:-}" == "test" ]]; then
   fi
 
   # 3.4) Збираємо ENV для Maestro
-  EXTRA=( --env appId="${appId:?appId is missing}" )
-  [[ -n "${EMAIL:-}"     ]] && EXTRA+=( --env EMAIL="${EMAIL}" )
-  [[ -n "${PASSWORD:-}"  ]] && EXTRA+=( --env PASSWORD="${PASSWORD}" )
-  [[ -n "${FIRSTNAME:-}" ]] && EXTRA+=( --env FIRSTNAME="${FIRSTNAME}" )
-  [[ -n "${LASTNAME:-}"  ]] && EXTRA+=( --env LASTNAME="${LASTNAME}" )
-  [[ -n "${NEW_EMAIL:-}" ]] && EXTRA+=( --env NEW_EMAIL="${NEW_EMAIL}" )
-  [[ -n "${GOOGLE_ACCOUNT_EMAIL:-}" ]] && EXTRA+=( --env GOOGLE_ACCOUNT_EMAIL="${GOOGLE_ACCOUNT_EMAIL}" )
+ EXTRA=( --env appId="${appId:?appId is missing}" )
+ [[ -n "${EMAIL:-}"     ]] && EXTRA+=( --env EMAIL="${EMAIL}" )
+ [[ -n "${EMAIL_TWO:-}" ]] && EXTRA+=( --env EMAIL_TWO="${EMAIL_TWO}" )
+ [[ -n "${PASSWORD:-}"  ]] && EXTRA+=( --env PASSWORD="${PASSWORD}" )
+ [[ -n "${FIRSTNAME:-}" ]] && EXTRA+=( --env FIRSTNAME="${FIRSTNAME}" )
+ [[ -n "${LASTNAME:-}"  ]] && EXTRA+=( --env LASTNAME="${LASTNAME}" )
+ [[ -n "${NEW_EMAIL:-}" ]] && EXTRA+=( --env NEW_EMAIL="${NEW_EMAIL}" )
+ [[ -n "${GOOGLE_ACCOUNT_EMAIL:-}" ]] && EXTRA+=( --env GOOGLE_ACCOUNT_EMAIL="${GOOGLE_ACCOUNT_EMAIL}" )
 
-  # 3.5) Fresh-start + явний запуск апки поза Maestro (стабільніше)
-  if [[ -n "${DEVICE_ID:-}" && -n "${appId:-}" ]]; then
+
+  # 3.5) Опційний fresh-start (керується FRESH_START=true)
+  FRESH_START="${FRESH_START:-false}"
+
+  if [[ "${FRESH_START}" == "true" && -n "${DEVICE_ID:-}" && -n "${appId:-}" ]]; then
     adb -s "${DEVICE_ID}" shell pm clear "${appId}" || true
     adb -s "${DEVICE_ID}" shell input keyevent 3 || true
     sleep 0.5
@@ -88,3 +92,4 @@ fi
 
 # Фолбек: виконуємо довільну команду як є
 exec "$@"
+

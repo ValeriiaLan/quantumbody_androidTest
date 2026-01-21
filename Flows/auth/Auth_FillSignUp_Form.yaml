@@ -13,14 +13,14 @@ appId: ${appId}
 
 - tapOn: "PASSWORD"
 - inputText: ${PASSWORD}
-- hideKeyboard
+
 - waitForAnimationToEnd
 
 # Погоджуємось з умовами (тап по тексту стабільно активує чекбокс)
 - tapOn:
-      point: "6%,47%"
+        point: "8%,44%"
 
 # Сабміт
-- assertVisible: "CONTINUE"
-- tapOn: "CONTINUE"
+
+- tapOn: "Button\nCONTINUE"
 - waitForAnimationToEnd
