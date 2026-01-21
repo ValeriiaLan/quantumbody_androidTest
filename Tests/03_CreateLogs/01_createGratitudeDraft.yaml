@@ -1,0 +1,12 @@
+appId: ${appId}
+---
+
+- tapOn: "LOG GRATITUDE"
+- assertVisible: "GRATITUDE"
+
+- tapOn: "TITLE YOUR GRATITUDE"
+
+- inputText: "2 New home by the sea"
+
+- tapOn: "SAVE AS DRAFT"
+- assertVisible: "CHOOSE YOUR\nFIELD OF FOCUS"

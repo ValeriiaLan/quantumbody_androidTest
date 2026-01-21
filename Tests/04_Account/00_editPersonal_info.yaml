@@ -1,0 +1,20 @@
+appId: ${appId}
+---
+- tapOn:
+    point: "88%,94%"
+- tapOn: "EDIT PERSONAL INFO"
+- tapOn: "@valeriialanchynska"
+- inputText: "1"
+- tapOn: "Valeriia"
+- inputText: "1"
+
+- tapOn: "Lanchynska"
+- inputText: "1"
+- tapOn: "vdrssslera1234@gmail.com"
+- tapOn: "SAVE"
+- assertVisible: "@valeriialanchynska1"
+- tapOn:
+    point: "19%,29%"
+- tapOn:
+    point: "17%,67%"
+- tapOn: "SAVE"

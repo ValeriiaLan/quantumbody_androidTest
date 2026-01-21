@@ -1,0 +1,18 @@
+appId: ${appId}
+---
+
+- tapOn: "SUBMIT A TESTIMONIAL"
+- assertVisible: "SUBMIT A TESTIMONIAL"
+- tapOn: "TELL US WHAT YOU MANIFESTED OR HOW THE APP SUPPORTED YOUR JOURNEY.*"
+
+- inputText: "test"
+
+- tapOn:
+    point: "8%,65%"
+- tapOn:
+    point: "8%,71%"
+- tapOn:
+    point: "8%,76%"
+- tapOn: "Submit"
+- assertVisible: "MY ACCOUNT"
+#далі перейшти в пошту буде готове пізніщ

@@ -1,0 +1,12 @@
+appId: ${appId}
+---
+- tapOn: "EXPORT ENTRIES"
+- assertVisible: "An email with a download link for your logs will be sent to: vdrssslera1234@gmail.com\n\
+    The link will remain active for 24 hours!"
+- tapOn: "Send"
+- tapOn: "EXPORT ENTRIES"
+- tapOn: "Change email"
+- assertVisible: "Change email"
+- tapOn: "Email"
+- inputText: ${EMAIL2}
+- tapOn: "Send"

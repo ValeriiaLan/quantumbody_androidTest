@@ -1,0 +1,18 @@
+appId: ${appId}
+---
+
+
+- tapOn:
+    point: "88%,94%"
+- tapOn: "SUBSCRIPTION MANAGEMENT"
+- assertVisible: "MANAGE PLAN\nManage your plans in one convenient place"
+- assertVisible: "CANCEL SUBSCRIPTION"
+- assertVisible: "RESTORE PURCHASES"
+- assertVisible: "TERMS & CONDITIONS"
+- assertVisible: "PRIVACY POLICY"
+- tapOn: "TERMS & CONDITIONS"
+- assertVisible: "Terms of Service"
+- tapOn:
+    point: "9%,8%"
+- tapOn:
+    point: "9%,8%"
