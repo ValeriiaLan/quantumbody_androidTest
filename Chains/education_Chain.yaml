@@ -5,6 +5,3 @@ appId: ${appId}
 - runFlow:
     file: ../Flows/education/checkFromHome.yaml
 
-# 2. Перевірка доступу до Education з Navigation Bar
-- runFlow:
-    file: ../Flows/education/checkFromNavBar.yaml

@@ -1,7 +1,8 @@
 appId: ${appId}
 ---
 
-- tapOn: "LOG SYNCHRONICITY"
+- tapOn:
+    point: "26%,56%"
 - assertVisible: "SYNCHRONICITY"
 
 - tapOn: "TITLE YOUR SYNCHRONICITY"
@@ -11,6 +12,7 @@ appId: ${appId}
 - tapOn: "NOTE THE FEELINGS"
 - inputText: "3 I feel calm, safe, inspired and confident that life is supporting me. There is a soft sense of trust and excitement about the future."
 
-- tapOn: "SAVE"
+- tapOn: "SAVE\nSAVE"
 
-- assertVisible: "CHOOSE YOUR\nFIELD OF FOCUS"
+- assertVisible: "3 NEW HOME BY THE SEA"
+- tapOn: "back_button"

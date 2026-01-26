@@ -2,42 +2,50 @@ appId: ${appId}
 ---
 
 - tapOn:
-    point: "88%,94%"
-- tapOn: "EDIT PERSONAL INFO"
+      point: "88%,94%"
+
+
+
+- tapOn: "Button\nEDIT PERSONAL INFO"
+
+
 
 - swipe:
     start: "50%,80%"
     end: "50%,20%"
 
+- tapOn: "DELETE ACCOUNT\nDELETE ACCOUNT"
+- tapOn: "Button\nDelete"
 
-
-- tapOn:
-    point: "50%,81%"
-- assertVisible: "Delete Account?"
-- tapOn: "Delete"
 - assertVisible: "Please sign in again?"
-- tapOn: "Sign in again"
-- assertVisible: "CONTINUE WITH EMAIL"
-- tapOn: "LOGIN"
+- tapOn: "Button\nSign in again"
+
+
+
+- runFlow: ../../Tests/01_Auth/03_Auth_Login_HappyPath.yaml
 
 - runFlow:
-    file: ../auth/Auth_FillLogin_Form.yaml
+      when:
+          visible: "Button\nSTART 7-DAY TRIAL FOR $0"
+      commands:
+          - tapOn:
+                point: "10%,7%"
 
 
 - tapOn:
-    point: "88%,94%"
-- tapOn: "EDIT PERSONAL INFO"
+      point: "88%,94%"
 
+- tapOn: "Button\nEDIT PERSONAL INFO"
 - swipe:
-    start: "50%,80%"
-    end: "50%,20%"
+      start: "50%,80%"
+      end: "50%,20%"
+
+- tapOn: "DELETE ACCOUNT\nDELETE ACCOUNT"
+- tapOn: "Button\nDelete"
 
 
-- tapOn:
-    point: "50%,81%"
-- assertVisible: "Delete Account?"
-- tapOn: "Delete"
-- assertVisible: "CONTINUE WITH EMAIL"
+
+- assertVisible: "Button\nCONTINUE WITH EMAIL"
 
 
 

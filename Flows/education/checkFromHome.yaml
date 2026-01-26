@@ -6,12 +6,44 @@ appId: ${appId}
     point: "13%,94%"
 - scrollUntilVisible:
     element:
-      text: "EXPLORE EDUCATION PORTAL"
+      text: "Button\nEXPLORE EDUCATION PORTAL"
 
-- tapOn: "EXPLORE EDUCATION PORTAL"
+- tapOn: "Button\nEXPLORE EDUCATION PORTAL"
 - assertVisible: "EDUCATION PORTAL"
 
 - scrollUntilVisible:
     element:
       text: "QUANTUM BASICS: THE FOUNDATION"
 
+- tapOn: "Button\nREAD MORE"
+
+- scrollUntilVisible:
+    element:
+      text: "Button\nREAD MORE"
+
+- tapOn: "Button\nREAD MORE"
+
+- assertVisible: "HOW-TO USE THE APP
+
+    The Framework for Alignment"
+
+- scrollUntilVisible:
+    element:
+      text: "Button\nREAD MORE"
+
+- tapOn: "Button\nREAD MORE"
+
+- scrollUntilVisible:
+    element:
+      text: "Button\nREAD MORE"
+
+- tapOn: "Button\nREAD MORE"
+
+- assertVisible: "GRATITUDE
+
+    The Frequency of Receivership"
+
+- tapOn: "back_button"
+
+- tapOn:
+    point: "13%,94%"

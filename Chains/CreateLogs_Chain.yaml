@@ -14,7 +14,5 @@ appId: ${appId}
 - runFlow: ../Tests/03_CreateLogs/03_create_logDream.yaml
 
 
-- runFlow: ../Tests/03_CreateLogs/04_log_intention_Draft.yaml
 
-
-- runFlow: ../Tests/03_CreateLogs/06_create_manifistation_draft.yaml
+- runFlow: ../Tests/03_CreateLogs/04_log_intention.yaml

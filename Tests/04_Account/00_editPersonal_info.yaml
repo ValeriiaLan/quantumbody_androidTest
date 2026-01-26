@@ -2,7 +2,7 @@ appId: ${appId}
 ---
 - tapOn:
     point: "88%,94%"
-- tapOn: "EDIT PERSONAL INFO"
+- tapOn: "Button\nEDIT PERSONAL INFO"
 - tapOn: "@valeriialanchynska"
 - inputText: "1"
 - tapOn: "Valeriia"
@@ -10,14 +10,13 @@ appId: ${appId}
 
 - tapOn: "Lanchynska"
 - inputText: "1"
-- tapOn: "vdrssslera1234@gmail.com"
-- tapOn: "SAVE"
+- hideKeyboard
+- tapOn: "SAVE\nSAVE"
 - waitForAnimationToEnd
 - assertVisible: "@valeriialanchynska1"
 - waitForAnimationToEnd
 - waitForAnimationToEnd
 - waitForAnimationToEnd
-- tapOn:
-    point: "9%,8%"
+- tapOn: "back_button"
 - waitForAnimationToEnd
 - assertVisible: "MY ACCOUNT"

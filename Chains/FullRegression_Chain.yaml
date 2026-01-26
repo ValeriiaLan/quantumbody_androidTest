@@ -20,3 +20,5 @@ appId: ${appId}
 
 
 
+- runFlow:
+      file: education_Chain.yaml

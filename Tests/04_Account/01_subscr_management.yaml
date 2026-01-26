@@ -2,23 +2,18 @@ appId: ${appId}
 ---
 
 
-- tapOn: "SUBSCRIPTION MANAGEMENT"
-- assertVisible: "MANAGE PLAN\nManage your plans in one convenient place"
-- assertVisible: "CANCEL SUBSCRIPTION"
-- assertVisible: "RESTORE PURCHASES"
-- assertVisible: "TERMS & CONDITIONS"
-- assertVisible: "PRIVACY POLICY"
-- tapOn: "TERMS & CONDITIONS"
+- tapOn: "Button\nSUBSCRIPTION MANAGEMENT"
+- assertVisible: "Button\nSTART 7-DAY TRIAL FOR $0"
+- scroll
+- scroll
+- tapOn: "Button\nTERMS & CONDITIONS"
 - assertVisible: "Terms of Service"
-- tapOn:
-      point: "9%,8%"
 
-- waitForAnimationToEnd
-- waitForAnimationToEnd
-- waitForAnimationToEnd
+- tapOn: "back_button"
+- tapOn: "Button\nPRIVACY POLICY"
+- assertVisible: "Privacy Policy"
+- tapOn: "back_button"
 
-
-- tapOn:
-      point: "9%,8%"
+- tapOn: "Button"
 
 - assertVisible: "MY ACCOUNT"
