@@ -1,12 +1,13 @@
 appId: ${appId}
 ---
 
-- tapOn: "LOG GRATITUDE"
+- tapOn:
+    point: "74%,32%"
 - assertVisible: "GRATITUDE"
 
 - tapOn: "TITLE YOUR GRATITUDE"
 
 - inputText: "2 New home by the sea"
 
-- tapOn: "SAVE AS DRAFT"
+- tapOn: "Button\nSAVE AS DRAFT"
 - assertVisible: "CHOOSE YOUR\nFIELD OF FOCUS"

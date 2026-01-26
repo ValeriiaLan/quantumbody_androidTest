@@ -5,8 +5,8 @@ appId: ${appId}
 
 - runFlow: ../Tests/05_checkPages/01_inProgress_toActive.yaml
 
-
-- runFlow: ../Tests/05_checkPages/02_toTrashbinAndBack.yaml
-- runFlow: ../Tests/05_checkPages/03_toArchiveAndBack.yaml
-- runFlow: ../Tests/05_checkPages/04_aligmentLog.yaml
-- runFlow: ../Tests/05_checkPages/05_delete_Permanentli.yaml
+недоступно без підписки -закомітила
+#- runFlow: ../Tests/05_checkPages/02_toTrashbinAndBack.yaml
+#- runFlow: ../Tests/05_checkPages/03_toArchiveAndBack.yaml
+#- runFlow: ../Tests/05_checkPages/04_aligmentLog.yaml
+#- runFlow: ../Tests/05_checkPages/05_delete_Permanentli.yaml

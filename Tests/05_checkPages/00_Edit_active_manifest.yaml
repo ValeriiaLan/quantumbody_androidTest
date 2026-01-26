@@ -1,8 +1,8 @@
 appId: ${appId}
 ---
 - tapOn:
-    point: "13%,94%"
-- tapOn: "Active
+      point: "69%,94%"
+- tapOn: "Button
 
     NEW HOME BY THE SEA
 
@@ -12,9 +12,12 @@ appId: ${appId}
 
 - assertVisible: "NEW HOME BY THE SEA"
 - tapOn: "Show menu"
-- tapOn: "Edit"
-- tapOn: "NEW HOME BY THE SEA"
-- inputText: "55"
-- tapOn: "SAVE"
-- tapOn: "Save and Close"
-- assertVisible: "NEW HOME BY THE SEA55"
+- tapOn: "Button\nEdit"
+- longPressOn: "NEW HOME BY THE SEA"
+- tapOn: "Select all"
+- inputText: "NEW HOME BY THE SEA 55"
+
+- tapOn: "SAVE\nSAVE"
+- tapOn: "Button\nSave and Close"
+- assertVisible: "NEW HOME BY THE SEA 55"
+- tapOn: "back_button"

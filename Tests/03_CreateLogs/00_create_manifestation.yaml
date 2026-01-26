@@ -2,15 +2,15 @@ appId: ${appId}
 ---
 
 - tapOn:
-    point: "50%,94%"
-- assertVisible: "CHOOSE YOUR\nFIELD OF FOCUS"
-- tapOn: "LOG MANIFESTATION"
-- assertVisible: "MANIFESTATION"
+      point: "50%,94%"
+- tapOn:
+      point: "26%,32%"
+
 - tapOn: "TITLE YOUR MANIFESTATION"
 - inputText: "New home by the sea"
 
 
-- tapOn: ADD THE DETAILS
+- tapOn: "ADD THE DETAILS"
 - inputText: "I earn stable income from work that I genuinely enjoy. My schedule is flexible, I can work from anywhere, and I always have enough resources for travel, learning and supporting my family. Money flows to me through multiple aligned projects and collaborations."
 
 - tapOn: "NOTE THE FEELINGS"
@@ -20,10 +20,12 @@ appId: ${appId}
 
 
 
-- tapOn: "UPLOAD AN IMAGE"
+- tapOn: "Button\nUPLOAD AN IMAGE"
 - tapOn:
-    point: "17%,64%"
-- tapOn: "Done"
-- tapOn: "SAVE"
+      point: "4%,26%"
+
+- tapOn: "Add (1)"
+- tapOn: "SAVE\nSAVE"
 - waitForAnimationToEnd
-- assertVisible: "CHOOSE YOUR\nFIELD OF FOCUS"
+- assertVisible: "NEW HOME BY THE SEA"
+- tapOn: "back_button"
