@@ -22,3 +22,6 @@ appId: ${appId}
 
 - runFlow:
       file: education_Chain.yaml
+
+- runFlow:
+      file: Delete_chain.yaml

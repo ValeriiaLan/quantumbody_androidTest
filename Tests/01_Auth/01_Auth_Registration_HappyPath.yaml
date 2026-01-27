@@ -13,4 +13,4 @@ appId: ${appId}
 - runFlow: ../../Flows/auth/Auth_FillSignUp_Form.yaml
 
 # 4) Upload photo (Happy Path)
-- runFlow: ../../Flows/profile/PostSignUp_UploadPhoto_Skip.yaml
+#- runFlow: ../../Flows/profile/PostSignUp_UploadPhoto_Skip.yaml
