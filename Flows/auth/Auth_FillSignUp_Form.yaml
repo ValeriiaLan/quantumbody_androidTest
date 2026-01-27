@@ -24,3 +24,7 @@ appId: ${appId}
 
 - tapOn: "Button\nCONTINUE"
 - waitForAnimationToEnd
+- assertVisible: "Button\nSTART 7-DAY TRIAL FOR $0"
+- tapOn:
+          point: "10%,7%"
+- assertVisible: "Button\nUPGRADE MY PLAN"

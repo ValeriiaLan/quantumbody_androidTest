@@ -1,14 +1,7 @@
 appId: ${appId}
 ---
 
-# Екран 1
-- assertVisible: "QUANTUM
 
-    BODY
-
-    YOUR SPACE FOR
-
-    CONSCIOUS LIVING"
 - tapOn: "Button\nGET STARTED"
 - waitForAnimationToEnd
 

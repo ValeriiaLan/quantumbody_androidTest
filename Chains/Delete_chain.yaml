@@ -1,3 +1,14 @@
 appId: ${appId}
 ---
 
+# Якщо є текст — значить треба ре-логін
+- runFlow:
+    when:
+      visible: "Please sign in again?"
+    file: ../Flows/account/delete_acc_withResingIN.yaml
+
+# Якщо тексту нема — йдемо без ре-логіну
+- runFlow:
+    when:
+      notVisible: "Please sign in again?"
+    file: ../Flows/account/delete_acc_withOUT_ResingIN.yaml

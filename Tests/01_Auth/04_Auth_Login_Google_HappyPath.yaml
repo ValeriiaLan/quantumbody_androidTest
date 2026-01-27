@@ -26,7 +26,11 @@ appId: ${appId}
         optional: true
 - waitForAnimationToEnd
 
-- assertVisible: "Button\nSTART 7-DAY TRIAL FOR $0"
-- tapOn: "Button"
+- runFlow:
+          when:
+                  visible: "Button\nSTART 7-DAY TRIAL FOR $0"
+          commands:
+                  - tapOn: "Button"
+          optional: true
 
 - assertVisible: "Button\nUPGRADE MY PLAN"

@@ -1,3 +1,27 @@
 appId: ${appId}
 ---
 
+- tapOn:
+    point: "88%,94%"
+
+
+
+- tapOn: "Button\nEDIT PERSONAL INFO"
+
+
+
+- swipe:
+    start: "50%,80%"
+    end: "50%,20%"
+
+- tapOn: "DELETE ACCOUNT\nDELETE ACCOUNT"
+- tapOn: "Button\nDelete"
+
+
+
+
+
+- assertVisible: "Button\nCONTINUE WITH EMAIL"
+
+
+
